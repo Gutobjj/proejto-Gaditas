@@ -10,18 +10,24 @@
 <body>
     <header>
         <nav> 
-            <h1>Iae</h1>
+            <h1>Cadastre-se</h1>
         </nav>
     </header>
-    <div>
-        <article>
-             <section>
-                <h2>  </h2>
-            </section>
-         </article>
-     <aside></aside>
-    </div>
-    <footer>@JF</footer>
     
+    <!--CADASTRO DE ALUNO-->
+    <section>
+        <div>
+            <form>
+                <input type="text" placeholder="Nome do aluno" autocomplete="off" required><br>
+                <input type="email" placeholder="Email" autocomplete="off"><br>
+                <input type="tel" id="phone" name="phone"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                 required><br>
+                <input type="submit" value="CADASTRAR">
+            </form>
+        </div>
+    </section>
+
+    <footer>@JF</footer>
 </body>
 </html>
