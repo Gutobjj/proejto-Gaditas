@@ -1,0 +1,17 @@
+header {
+    background-color: blue;
+    margin: 200px;
+}
+
+div {
+    background-color: aqua;
+    margin: 400px;
+}
+
+footer {
+    background-color: azure;
+}
+
+body {
+    background-color: beige;
+}
