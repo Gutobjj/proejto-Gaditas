@@ -8,25 +8,34 @@
     <title>Projeto Gaditas</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <nav> 
-            <h1>Cadastre-se</h1>
-        </nav>
-    </header>
-    
-    <!--CADASTRO DE ALUNO-->
-    <section>
-        <div>
-            <form>
-                <input type="text" placeholder="Nome do aluno" autocomplete="off" required><br>
-                <input type="email" placeholder="Email" autocomplete="off"><br>
-                <input type="tel" id="phone" name="phone"
-                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                 required><br>
-                <input type="submit" value="CADASTRAR">
-            </form>
+        <!--MENU MOBILE-->
+        <ul class="sidenav" id="menu-mobile">
+            <li><a class="sidenav-close" href="#home">Home</a></li>
+            <li><a class="sidenav-close" href="#sobre">Sobre Nós</a></li>  
+            <li><a class="sidenav-close" href="login.php">Login</a></li>
+        </ul>
+
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <h1 class="logo_text">Gaditas Academy</h1>
+                    <a href=""><img class="logo_img" src="img/logo.png">
+            
+                    <ul class="right light hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="login.php">Login</a></li>
+                    </ul>
+
+                    <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
         </div>
-    </section>
+    </header>
 
     <footer>@JF</footer>
 </body>

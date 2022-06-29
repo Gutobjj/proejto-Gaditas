@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Gaditas</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!--MENU MOBILE-->
+        <ul class="sidenav" id="menu-mobile">
+            <li><a class="sidenav-close" href="#home">Home</a></li>
+            <li><a class="sidenav-close" href="#sobre">Sobre Nós</a></li>  
+            <li><a class="sidenav-close" href="sair.php">Sair</a></li>
+        </ul>
+
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <h1 class="logo_text">Gaditas Academy</h1>
+                    <a href=""><img class="logo_img" src="img/logo.png">
+            
+                    <ul class="right light hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="sair.php">Sair</a></li>
+                    </ul>
+
+                    <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!--CADASTRO DE ALUNO-->
+    <section class="cadastramento">
+        <h3>Cadastrar aluno</h3>
+        <div>
+            <form>
+                <input type="text" placeholder="Nome do aluno" autocomplete="off" required><br>
+                <input type="email" placeholder="Email" autocomplete="off"><br>
+                <input type="tel" placeholder="Telefone" name="phone"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                 required><br>
+                <input type="datetime-local" name="date" id="date"><br>
+                <input type="submit" value="CADASTRAR">
+                
+            </form>
+        </div>
+    </section>
+
+    <!--ALUNOS-->
+    <section id="alunos">
+        <h3> Alunos </h3>
+        <div>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <th><img height="50" src=""></th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Graduação</th>
+                    <th>Data de Nascimento</th>
+                    <th>Presença</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>José Augusto</td>
+                        <td>79 9 9999-9999</td>
+                        <td>Black belt</td>
+                        <td>19/08/1998</td>
+                        <td><input type="button" value="Presente"><input type="button" value="Faltou"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>@JF</footer>
+</body>
+</html>
