@@ -5,22 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gaditas</title>
-	<!-- CUSTOM CSS -->
-	<link rel="stylesheet" href="style.css">
+        <!-- GOOGLE ICONS -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- MATERIALIZE CSS -->		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<!-- CUSTOM CSS -->
+		<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--LOGIN-->
-    <section class="login">
-        <h3 class="name"> Login </h3>
-        <div class="form">
-            <form class="form" method="POST">
-                <input type="email" name="email" placeholder="Usuário" maxlength="40" autocomplete="off" required><br><br>
-                <input type="password" name="senha" placeholder="Senha" maxlength="15"><br><br>
-                <input type="submit" value="ACESSAR">
-            </form>
-        </div>
-    </section>
+    <!-- HEADER -->
+	<header>
+	    <!-- MENU MOBILE -->
+		<ul class="side-nav" id="menu-mobile">
+			<li><a class="hide-menu" href="index.html">Home</a></li>
+			<li><a class="hide-menu" href="#sobre">Sobre Nós</a></li>
+			<li><a class="hide-menu" href="#servicos">Serviços</a></li>
+			<li><a class="hide-menu" href="#unidades">Unidades</a></li>
+			<li><a class="hide-menu" href="#contato">Contato</a></li>
+            <li><a class="hide-menu" href="login.html">Login</a></li>
+		</ul>
+
+	    <div class="navbar-fixed">
+		<nav class="navbar z-depth-0">
+			<div class="nav-wrapper container">
+				<h1 class="logo_text">Gaditas Academy </h1>
+				<a href=""><img class="logo_img" src="img/logo.png" alt="Academia Gaditas"></a>
+
+				<ul class="right light hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#sobre">Sobre Nós</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#unidades">Unidades</a></li>
+					<li><a href="#contato">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+				</ul>			
+
+				<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+		</div>
+	</header>
+
+	<!--LOGIN-->
+	<section class="login container">
+		<div class="corpo-form">
+			<h3> Login </h3>
+			<form class="form" method="POST">
+				<input type="email" name="email" placeholder="Usuário" maxlength="40" autocomplete="off" required><br><br>
+				<input type="password" name="senha" placeholder="Senha" maxlength="15"><br><br>
+				<input type="submit" value="ENVIAR" onclick="entrar()">
+			</form>
+		</div>
+	</section>
 
     <footer></footer>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- MATERIALIZE JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<!-- JAVASCRIPT -->
+	<script>
+        function entrar(){
+            window.location = "menu.html"
+        }
+	    // INICIALIZAÇÃO 
+		$(document).ready(function(){
+        	// MENU MOBILE
+        	$(".button-collapse").sideNav();
+        	// LINK INTERNO
+        	$(".scrollspy").scrollSpy({
+        		scrollOffset: 0
+        	});
+            // TABS
+            $("ul.tabs").tabs();
+            // ESCONDER MENU AO CLICAR
+            $(".hide-menu").click(function(){
+                $(".button-collapse").sideNav("hide");
+            });
+        });
+                
+        // ADICIONANDO NAVCOLOR
+		$(window).on("scroll", function(){
+			if($(window).scrollTop() > 100) {
+				$(".navbar").addClass("nav-color");
+			} else {
+				$(".navbar").removeClass("nav-color");
+			}
+		});
+	</script>	
 </body>
 </html>

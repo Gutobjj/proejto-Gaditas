@@ -6,59 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Projeto Gaditas</title>
+        <!-- GOOGLE ICONS -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- MATERIALIZE CSS -->		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<!-- CUSTOM CSS -->
+		<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <!--MENU MOBILE-->
-        <ul class="sidenav" id="menu-mobile">
-            <li><a class="sidenav-close" href="#home">Home</a></li>
-            <li><a class="sidenav-close" href="#sobre">Sobre Nós</a></li>  
-            <li><a class="sidenav-close" href="index.html">Sair</a></li>
-        </ul>
+	<header>
+	    <!-- MENU MOBILE -->
+		<ul class="side-nav" id="menu-mobile">
+			<li><a class="hide-menu" href="#home">Home</a></li>
+			<li><a class="hide-menu modal-trigger" href="#cadastramento">Cadastrar Aluno</a></li>
+            <li><a class="hide-menu" href="index.html">Sair</a></li>
+		</ul>
 
-        <div class="navbar-fixed">
-            <nav class="navbar z-depth-0">
-                <div class="nav-wrapper container">
-                    <h1 class="logo_text">Gaditas Academy</h1>
-                    <a href=""><img class="logo_img" src="img/logo.png">
-            
-                    <ul class="right light hide-on-med-and-down">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre Nós</a></li>
-                        <li><a href="#unidades">Unidades</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <li><a href="index.html">Sair</a></li>
-                    </ul>
+	    <div class="navbar-fixed">
+		<nav class="navbar z-depth-0">
+			<div class="nav-wrapper container">
+				<h1 class="logo_text">Gaditas Academy </h1>
+				<a href=""><img class="logo_img" src="img/logo.png" alt="Academia Gaditas"></a>
 
-                    <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                </div>
-            </nav>
-        </div>
-    </header>
+				<ul class="right light hide-on-med-and-down">
+					<li><a href="#home">Home</a></li>
+					<li><a class="modal-trigger" href="#cadastramento">Cadastrar Aluno</a></li>
+                    <li><a href="index.html">Sair</a></li>
+				</ul>			
+
+				<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+		</div>
+	</header>
     
     <!--CADASTRO DE ALUNO-->
-    <section class="cadastramento">
-        <h3>Cadastrar aluno</h3>
-        <div>
-            <form>
-                <input type="text" placeholder="Nome do aluno" autocomplete="off" required><br>
-                <input type="email" placeholder="Email" autocomplete="off"><br>
-                <input type="tel" placeholder="Telefone" name="phone"
-                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                 required><br>
-                <input type="datetime-local" name="date" id="date"><br>
-                <input type="submit" value="CADASTRAR">
-                
-            </form>
+    <section class="container">
+        <!--MODAL CADASTRO DE ALUNOS-->
+        <div class="modal"  id="cadastramento">
+            <div class="modal-content">
+                <h3>Cadastrar aluno</h3>
+                <form>
+                    <input type="text" placeholder="Nome do aluno" autocomplete="off" required><br>
+                    <input type="email" placeholder="Email" autocomplete="off"><br>
+                    <input type="tel" placeholder="Telefone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                    <input type="date" placeholder="Data de Nascimento" name="date"><br>
+                    <input type="submit" value="CADASTRAR">
+                    
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn blue-logo modal-action modal-close">Voltar</a>
+            </div>
         </div>
     </section>
 
     <!--ALUNOS-->
-    <section id="alunos">
+    <section class="container tabela" id="alunos">
         <h3> Alunos </h3>
-        <div>
-            <table border="1" cellpadding="10">
+        <div class="corpo-tabela">
+            <table>
                 <thead>
                     <th><img height="50" src=""></th>
                     <th>Nome</th>
@@ -75,7 +84,7 @@
                         <td>79 9 9999-9999</td>
                         <td>Black belt</td>
                         <td>19/08/1998</td>
-                        <td><input type="button" value="Presente"><input type="button" value="Faltou"></td>
+                        <td><input type="button" id="presente" value="Presente"><input type="button" id="faltou" value="Faltou"></td>
                     </tr>
                 </tbody>
             </table>
@@ -83,5 +92,39 @@
     </section>
 
     <footer></footer>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- MATERIALIZE JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+        <!-- JAVASCRIPT -->
+        <script>
+            // INICIALIZAÇÃO 
+            $(document).ready(function(){
+                // MENU MOBILE
+                $(".button-collapse").sideNav();
+                // LINK INTERNO
+                $(".scrollspy").scrollSpy({
+                    scrollOffset: 0
+                });
+                // MODAL
+                $(".modal").modal();
+                // ESCONDER MENU AO CLICAR
+                $(".hide-menu").click(function(){
+                    $(".button-collapse").sideNav("hide");
+                });
+            });
+
+            // ADICIONANDO NAVCOLOR
+            $(window).on("scroll", function(){
+                if($(window).scrollTop() > 100) {
+                    $(".navbar").addClass("nav-color");
+                } else {
+                    $(".navbar").removeClass("nav-color");
+                }
+            });
+        </script>	
 </body>
 </html>
