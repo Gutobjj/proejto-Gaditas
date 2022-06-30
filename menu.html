@@ -84,47 +84,61 @@
                         <td>79 9 9999-9999</td>
                         <td>Black belt</td>
                         <td>19/08/1998</td>
-                        <td><input type="button" id="presente" value="Presente"><input type="button" id="faltou" value="Faltou"></td>
+                        <td><input type="button" id="presente" value="Presente" onclick="presente()"><input type="button" id="faltou" value="Faltou" onclick="faltou()"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <footer></footer>
+    <!-- RODAPÉ
+	<footer class="rodape">
+		<div class="row container center">
+			<img src="img/logo.png" class="logo_img">
+			<p class="light white-text">© Gaditas Academy 2022 - Todos os direitos reservados </p>
+		</div>        
+	</footer>-->
 
-        <!-- JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- MATERIALIZE JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     
-        <!-- JAVASCRIPT -->
-        <script>
-            // INICIALIZAÇÃO 
-            $(document).ready(function(){
-                // MENU MOBILE
-                $(".button-collapse").sideNav();
-                // LINK INTERNO
-                $(".scrollspy").scrollSpy({
-                    scrollOffset: 0
-                });
-                // MODAL
-                $(".modal").modal();
-                // ESCONDER MENU AO CLICAR
-                $(".hide-menu").click(function(){
-                    $(".button-collapse").sideNav("hide");
-                });
-            });
+    <!-- JAVASCRIPT -->
+    <script>
+        function presente (){
+            confirm("Deseja adicionar uma presença neste aluno ?");
+        }
 
-            // ADICIONANDO NAVCOLOR
-            $(window).on("scroll", function(){
-                if($(window).scrollTop() > 100) {
-                    $(".navbar").addClass("nav-color");
-                } else {
-                    $(".navbar").removeClass("nav-color");
-                }
+        function faltou (){
+            confirm("Deseja adicionar uma falta neste aluno ?");
+        }
+
+        // INICIALIZAÇÃO 
+        $(document).ready(function(){
+            // MENU MOBILE
+            $(".button-collapse").sideNav();
+            // LINK INTERNO
+            $(".scrollspy").scrollSpy({
+                scrollOffset: 0
             });
+            // MODAL
+            $(".modal").modal();
+            // ESCONDER MENU AO CLICAR
+            $(".hide-menu").click(function(){
+                $(".button-collapse").sideNav("hide");
+            });
+        });
+
+        // ADICIONANDO NAVCOLOR
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() > 100) {
+                $(".navbar").addClass("nav-color");
+            } else {
+                $(".navbar").removeClass("nav-color");
+            }
+        });
         </script>	
 </body>
 </html>
