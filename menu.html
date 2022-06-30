@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Projeto Gaditas</title>
+    <link rel="icon" href="img/fav.png">
         <!-- GOOGLE ICONS -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- MATERIALIZE CSS -->		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- HEADER -->
@@ -48,6 +50,30 @@
             <div class="modal-content">
                 <h3>Cadastrar aluno</h3>
                 <form>
+                    <div class="input-field col s12">
+                        <select type="text" name="faixa" id="idfaixa" autocomplete="off"  value="Graduação">
+                            <option value="Branca">Branca</option>
+                            <option value="CinzaBranca">Cinza e Branca</option>
+                            <option value="Cinza">Cinza</option>
+                            <option value="CinzaPreta">Cinza e Preta</option>
+                            <option value="AmarelaBranca">Amarela e Branca</option>
+                            <option value="Amarela">Amarela</option>
+                            <option value="AmarelaPreta">Amarela e Preta</option>
+                            <option value="LaranjaBranca">Laranja e Branca</option>
+                            <option value="Laranja">Laranja</option>
+                            <option value="LaranjaPreta">Laranja e Preta</option>
+                            <option value="VerdeBranca">Verde e Branca</option>
+                            <option value="Verde">Verde</option>
+                            <option value="VerdePreta">Verde e Preta</option>
+                            <option value=" Azul"> Azul</option>
+                            <option value="Roxa">Roxa</option>
+                            <option value="Marrom">Marrom</option>
+                            <option value="Preta">Preta</option>
+                            <option value="VermelhaPreta">Vermelha e Preta</option>
+                            <option value="VermelhaBranca"> Vermelha e Branca</option>
+                            <option value="Vermelha">Vermelha</option>
+                        </select>
+                    </div>
                     <input type="text" placeholder="Nome do aluno" autocomplete="off" required><br>
                     <input type="email" placeholder="Email" autocomplete="off"><br>
                     <input type="tel" placeholder="Telefone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
@@ -70,6 +96,7 @@
             <table>
                 <thead>
                     <th><img height="50" src=""></th>
+                    <th>Editar</th>
                     <th>Nome</th>
                     <th>Telefone</th>
                     <th>Graduação</th>
@@ -80,6 +107,7 @@
                 <tbody>
                     <tr>
                         <td></td>
+                        <td><input type="button" id="editar" value="Editar" onclick="editar()"></td>
                         <td>José Augusto</td>
                         <td>79 9 9999-9999</td>
                         <td>Black belt</td>
@@ -125,6 +153,11 @@
             });
             // MODAL
             $(".modal").modal();
+            
+            // SELECT
+            $(document).ready(function(){
+                $('select').material_select();
+            });
             // ESCONDER MENU AO CLICAR
             $(".hide-menu").click(function(){
                 $(".button-collapse").sideNav("hide");

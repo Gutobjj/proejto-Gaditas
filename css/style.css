@@ -3,11 +3,13 @@ html, body {height: 100%;}
 .bloco {min-height:100%;padding-top: 94px;}
 
 /*COLORS*/
-.orange-logo {background-color:#d07a2d;}
+
 
 /* LOGO */
 .logo_text {font-size: 0;margin: 0;}
-.logo_img{width: 100px;margin-top: 15px;}
+.logo_img{width: 100px; height: 85px; margin-top: 5px; }
+
+.logo2_img{width: 50px; margin-top: 5px;}
 
 /*MENU*/
 .navbar{background-color: #004aad;transition: background 0.5s linear;}
