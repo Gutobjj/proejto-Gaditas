@@ -21,8 +21,8 @@
 	    <!-- MENU MOBILE -->
 		<ul class="side-nav" id="menu-mobile">
 			<li><a class="hide-menu" href="#home">Home</a></li>
-			<li><a class="hide-menu modal-trigger" href="#cadastramento">Cadastrar Aluno</a></li>
-            <li><a class="hide-menu" href="index.html">Sair</a></li>
+			<li><a class="hide-menu modal-trigger" href="#cadastroAluno-modal">Cadastrar Aluno</a></li>
+            <li><a class="hide-menu" href="index.html" onclick="return confirm('Tem certeza que deseja sair ?')">Sair</a></li>
 		</ul>
 
 	    <div class="navbar-fixed">
@@ -33,20 +33,27 @@
 
 				<ul class="right light hide-on-med-and-down">
 					<li><a href="#home">Home</a></li>
-					<li><a class="modal-trigger" href="#cadastramento">Cadastrar Aluno</a></li>
-                    <li><a href="index.html">Sair</a></li>
+					<li><a class="dropdown-trigger" data-activates="dropdown-adicionar">Cadastrar</a></li>
+                    <li><a href="index.html" onclick="return confirm('Tem certeza que deseja sair ?')">Sair</a></li>
 				</ul>			
 
 				<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
 			</div>
 		</nav>
 		</div>
+
+        <!-- DROPDOWN -->
+        <ul id="dropdown-adicionar" class="dropdown-content">
+            <li><a href="#cadastroAluno-modal" class="modal-trigger">Aluno</a></li>
+            <li><a href="#cadastroUsuario-modal" class="modal-trigger">Usuário</a></li>
+        </ul>
+
 	</header>
     
     <!--CADASTRO DE ALUNO-->
     <section class="container">
         <!--MODAL CADASTRO DE ALUNOS-->
-        <div class="modal"  id="cadastramento">
+        <div class="modal"  id="cadastroAluno-modal">
             <div class="modal-content">
                 <h3>Cadastrar aluno</h3>
                 <form>
@@ -107,7 +114,7 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td><input type="button" id="editar" value="Editar" onclick="editar()"></td>
+                        <td><button id="editar" value="Editar" onclick="editar()"><i class="material-icons">edit</i></button></td>
                         <td>José Augusto</td>
                         <td>79 9 9999-9999</td>
                         <td>Black belt</td>
@@ -135,6 +142,7 @@
     
     <!-- JAVASCRIPT -->
     <script>
+        
         function presente (){
             confirm("Deseja adicionar uma presença neste aluno ?");
         }
@@ -153,7 +161,11 @@
             });
             // MODAL
             $(".modal").modal();
-            
+            //DROPDOWN
+            $('.dropdown-trigger').dropdown({
+                hover: true,
+                belowOrigin: true,
+            });
             // SELECT
             $(document).ready(function(){
                 $('select').material_select();
