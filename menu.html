@@ -49,9 +49,9 @@
         </ul>
 
 	</header>
-    
+
     <!--CADASTRO DE ALUNO-->
-    <section class="container">
+    <div class="row container">
         <!--MODAL CADASTRO DE ALUNOS-->
         <div class="modal"  id="cadastroAluno-modal">
             <div class="modal-content">
@@ -86,7 +86,6 @@
                     <input type="tel" placeholder="Telefone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
                     <input type="date" placeholder="Data de Nascimento" name="date"><br>
                     <input type="submit" value="CADASTRAR">
-                    
                 </form>
             </div>
 
@@ -94,45 +93,49 @@
                 <a class="btn blue-logo modal-action modal-close">Voltar</a>
             </div>
         </div>
-    </section>
-
+    </div>
+    
     <!--ALUNOS-->
-    <section class="container tabela" id="alunos">
-        <h3> Alunos </h3>
-        <div class="corpo-tabela">
-            <table>
-                <thead>
-                    <th><img height="50" src=""></th>
-                    <th>Editar</th>
-                    <th>Nome</th>
-                    <th>Telefone</th>
-                    <th>Graduação</th>
-                    <th>Data de Nascimento</th>
-                    <th>Presença</th>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td><button id="editar" value="Editar" onclick="editar()"><i class="material-icons">edit</i></button></td>
-                        <td>José Augusto</td>
-                        <td>79 9 9999-9999</td>
-                        <td>Black belt</td>
-                        <td>19/08/1998</td>
-                        <td><input type="button" id="presente" value="Presente" onclick="presente()"><input type="button" id="faltou" value="Faltou" onclick="faltou()"></td>
-                    </tr>
-                </tbody>
-            </table>
+    <section class="alunos bloco">
+        <div class="row container">
+            <div class="tabela" id="alunos">
+                <h3> Alunos </h3>
+                <div class="corpo-tabela">
+                    <table>
+                        <thead>
+                            <th><img height="50" src=""></th>
+                            <th>Editar</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Graduação</th>
+                            <th>Data de Nascimento</th>
+                            <th>Presença</th>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td><button id="editar" value="Editar" onclick="editar()"><i class="material-icons">edit</i></button></td>
+                                <td>José Augusto</td>
+                                <td>79 9 9999-9999</td>
+                                <td>Black belt</td>
+                                <td>19/08/1998</td>
+                                <td><input type="button" id="presente" value="Presente" onclick="presente()"><input type="button" id="faltou" value="Faltou" onclick="faltou()"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
         </div>
     </section>
 
-    <!-- RODAPÉ
-	<footer class="rodape">
-		<div class="row container center">
-			<img src="img/logo.png" class="logo_img">
-			<p class="light white-text">© Gaditas Academy 2022 - Todos os direitos reservados </p>
-		</div>        
-	</footer>-->
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div class="row container center">
+            <img src="img/logo.png" class="logo_img">
+            <p class="light white-text">© CTA GADITAS ACADEMY 2022 - Todos os direitos reservados</p>
+        </div>
+    </footer>
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -184,6 +187,6 @@
                 $(".navbar").removeClass("nav-color");
             }
         });
-        </script>	
+    </script>	
 </body>
 </html>

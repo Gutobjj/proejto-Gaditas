@@ -48,18 +48,26 @@
 	</header>
 
 	<!--LOGIN-->
-	<section class="login container">
-		<div class="corpo-form">
-			<img class="logo2_img" src="img/logo2.png">
-			<form class="form" method="POST">
-				<input type="email" name="email" placeholder="Usuário" maxlength="40" autocomplete="off" required><br><br>
-				<input type="password" name="senha" placeholder="Senha" maxlength="15"><br><br>
-				<input type="submit" value="ENTRAR" onclick="entrar()">
-			</form>
+	<section class="login bloco">
+		<div class="row container">
+			<div class="corpo-form">
+				<img class="logo2_img" src="img/logo2.png">
+				<form class="form" method="POST">
+					<input type="email" name="email" placeholder="Usuário" maxlength="40" autocomplete="off" required><br><br>
+					<input type="password" name="senha" placeholder="Senha" maxlength="15"><br><br>
+					<input type="submit" value="ENTRAR" onclick="entrar()">
+				</form>
+			</div>
 		</div>
 	</section>
 
-    <footer></footer>
+	<!--RODAPÉ-->
+	<footer class="rodape">
+		<div class="row container center">
+			<img src="img/logo.png" class="logo_img">
+			<p class="light white-text">© CTA GADITAS ACADEMY 2022 - Todos os direitos reservados</p>
+		</div>
+	</footer>
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

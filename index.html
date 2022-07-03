@@ -4,83 +4,757 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Gaditas</title>
-	<link rel="icon" href="img/fav.png">
-        <!-- GOOGLE ICONS -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!-- MATERIALIZE CSS -->		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-		<!-- CUSTOM CSS -->
-		<link rel="stylesheet" href="css/style.css">
+    <title>CTA GADITAS ACADEMY</title>
+    <link rel="icon" href="img/fav.png">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <!-- HEADER -->
-	<header>
-	    <!-- MENU MOBILE -->
-		<ul class="side-nav" id="menu-mobile">
-			<li><a class="hide-menu" href="#home">Home</a></li>
-			<li><a class="hide-menu" href="#sobre">Sobre Nós</a></li>
-			<li><a class="hide-menu" href="#servicos">Serviços</a></li>
-			<li><a class="hide-menu" href="#unidades">Unidades</a></li>
-			<li><a class="hide-menu" href="#contato">Contato</a></li>
-            <li><a class="hide-menu" href="login.html">Login</a></li>
-		</ul>
 
-	    <div class="navbar-fixed">
-		<nav class="navbar z-depth-0">
-			<div class="nav-wrapper container">
-				<h1 class="logo_text">Gaditas Academy </h1>
-				
-				<a href=""><img class="logo_img" src="img/logo.png" alt="Academia Gaditas"></a>
-				
+<!-- HEADER -->
+<header>
+    <!--MENU MOBILE-->
+    <ul class="sidenav" id="menu-mobile">
+        <li><a class="sidenav-close" href="#home">Home</a></li>
+        <li><a class="sidenav-close" href="#sobre">Sobre</a></li>
+        <li><a class="sidenav-close" href="#servicos">Serviços</a></li>
+        <li><a class="sidenav-close" href="#unidades">Unidades</a></li>
+        <li><a class="sidenav-close" href="#contato">Contato</a></li>
+        <li><a class="hide-menu" href="login.html">Login</a></li>
+    </ul>
 
-				<ul class="right light hide-on-med-and-down">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#sobre">Sobre Nós</a></li>
-					<li><a href="#servicos">Serviços</a></li>
-					<li><a href="#unidades">Unidades</a></li>
-					<li><a href="#contato">Contato</a></li>
+    <div class="navbar-fixed">
+        <nav class="navbar-home z-depth-0">
+            <div class="nav-wrapper container">
+                <h1 class="logo_text"> CTA GADITAS ACADEMY</h1>
+                <a href=""><img class="logo_img" src="img/logo.png">
+            
+                <ul class="right light hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
                     <li><a href="login.html">Login</a></li>
-				</ul>			
+                </ul>
 
-				<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
-			</div>
-		</nav>
-		</div>
-	</header>
+                <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+</header>
 
-    <footer></footer>
+<!-- HOME -->
+<section class="home bloco scrollspy" id="home">
+        <div class="row container banner">
+            <div class="col s12 center">
+                <h2 class="yellow-text">O melhor Centro de treinamento da região</h2>
+                <p class="white-text light">Um novo conceito na busca por saúde e melhora no condicionamento, Além de ser divertido e desafiador. Topa o desafio ?</p>
+                <div class="row">
+                    <a href="#sobre" class="btn btn-large cor-1">Sobre nós</a>
+                    <a href="#contato" class="btn btn-large white-text">Contato</a>
+                </div>
+            </div>
+        </div>
+</section>
 
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- MATERIALIZE JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<!-- JAVASCRIPT -->
-	<script>
-	    // INICIALIZAÇÃO 
-		$(document).ready(function(){
-        	// MENU MOBILE
-        	$(".button-collapse").sideNav();
-        	// LINK INTERNO
-        	$(".scrollspy").scrollSpy({
-        		scrollOffset: 0
-        	});
+<!-- SOBRE -->
+<section class="sobre bloco scrollspy" id="sobre">
+    <div class="row container">
+        <div class="col s12 center">
+            <h2 class="light titulo">Sobre nós</h2>
+        </div>
+        <div class="col s12 l6">
+            <p class="light">
+            Lorem ipsum dolor sit amet. Ut voluptas sint eos nihil dolores qui vitae officiis? Est magnam accusantium est nihil assumenda qui itaque vitae ut illum enim est temporibus dolor eos explicabo velit. Sit corporis minus eum galisum quidem et debitis saepe.
+
+            Et consequatur quibusdam sed iste quisquam ut dolores ipsam qui incidunt accusantium ut debitis minus aut quos illo. Ad earum tempora At blanditiis accusantium et ipsam omnis eos ullam cumque! Sit distinctio sapiente quo illo sapiente ut nobis veniam et exercitationem consequatur 33 minima similique!
+
+            Eos voluptatibus laudantium et voluptate maxime et numquam reiciendis qui sint tenetur. Quisquam dolores qui velit porro quo totam corrupti et molestiae blanditiis sed quibusdam quod. A eaque culpa vel incidunt minus et sapiente voluptatem ad sunt minus qui molestias atque.
+            </p>
+        </div>
+        <div class="col s12 l6">
+           <div class="carousel carousel-slider" data-indicators="true">
+               <a href="" class="carousel-item"><img alt="Imagem institucional" src="img/banner-01.jpg"></a>
+               <a href="" class="carousel-item"><img alt="Imagem institucional" src="img/banner-02.jpg"></a>
+               <a href="" class="carousel-item"><img alt="Imagem institucional" src="img/banner-03.jpg"></a>
+           </div> 
+        </div>
+    </div>
+    <div class="row cor-1 missao-visao-valores">
+        <div class="container">
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">directions_run</i></span>
+                    <h3 class="light">Missão</h3>
+                    <p class="light">Lorem ipsum dolor sit amet. Ut voluptas sint eos nihil dolores qui vitae officiis?
+                    Est magnam accusantium est nihil assumenda qui itaque vitae ut illum enim est temporibus dolor eos explicabo velit.
+                     Sit corporis minus eum galisum quidem et debitis saepe.</p>
+                </article>
+            
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">visibility</i></span>
+                    <h3 class="light">Visão</h3>
+                    <p class="light">Lorem ipsum dolor sit amet. Ut voluptas sint eos nihil dolores qui vitae officiis?
+                    Est magnam accusantium est nihil assumenda qui itaque vitae ut illum enim est temporibus dolor eos explicabo velit.
+                     Sit corporis minus eum galisum quidem et debitis saepe.</p>
+                </article>
+            
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">grade</i></span>
+                    <h3 class="light">Valores</h3>
+                    <p class="light">
+                        Abacate.<br>
+                        Ameixa.<br>
+                        Abacaxi.
+                    </p>
+                </article>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICOS-->
+<section class="servicos bloco scrollspy" id="servicos">
+    <div class="row container">
+        <div class="col s12 center">
+            <h2 class="light titulo black-text">Serviços</h2>
+            <p class="light paragrafo black-text">Lorem ipsum dolor sit amet. Ut voluptas sint eos nihil dolores qui vitae officiis?
+            Est magnam accusantium est nihil assumenda qui itaque vitae ut illum enim est temporibus dolor eos explicabo velit.
+            Sit corporis minus eum galisum quidem et debitis saepe.</p>
+        </div>
+    </div>
+
+    <div class="row container">
+        <!--JIU JITSU-->
+        <article class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/jiujitsu.jpg" alt="JIU JITSU" class="materialboxed">
+                    <a href="#jiujitsu-modal" class="btn btn-floating halfway-fab cor-1 modal-trigger">
+                        <i class="material-icons">more_horiz</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <h3 class="card-title"> JIU JITSU </h3>
+                    <p class="light">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </article>
+
+        <!--MODAL JIU JITSU-->
+        <div class="modal" id="jiujitsu-modal">
+            <div class="modal-content">
+                <h5 class="light">O que é jiu jitsu ?</h5>
+                <p class="light black-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn cor-1 modal-action modal-close">Sair</a>
+            </div>
+        </div>
+
+        <!--MUAY THAI-->
+        <article class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/muaythai.jpg" alt="MUAY THAI" class="materialboxed">
+                    <a href="#muaythai-modal" class="btn btn-floating halfway-fab cor-1 modal-trigger">
+                        <i class="material-icons">more_horiz</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <h3 class="card-title"> MUAY THAI </h3>
+                    <p class="light">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </article>
+
+        <!--MODAL MUAY THAI-->
+        <div class="modal" id="muaythai-modal">
+            <div class="modal-content">
+                <h5 class="light">Como funciona o Muay Thai ?</h5>
+                <p class="light black-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn cor-1 modal-action modal-close">Sair</a>
+            </div>
+        </div>
+
+         <!--JIU JITSU KIDS-->
+         <article class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/kids.jpg" alt="JIU JITSU KIDS" class="materialboxed">
+                    <a href="#jiujitsukids-modal" class="btn btn-floating halfway-fab cor-1 modal-trigger">
+                        <i class="material-icons">more_horiz</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <h3 class="card-title"> JIU JITSU KIDS </h3>
+                    <p class="light">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </article>
+
+        <!--MODAL JIU JITSU KIDS-->
+        <div class="modal" id="jiujitsukids-modal">
+            <div class="modal-content">
+                <h5 class="light">Como funciona o Jiu jitsu kids ?</h5>
+                <p class="light black-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn cor-1 modal-action modal-close">Sair</a>
+            </div>
+        </div>
+
+         <!--MMA-->
+         <article class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mma.jpg" alt="MMA" class="materialboxed">
+                    <a href="#jiujitsukids-modal" class="btn btn-floating halfway-fab cor-1 modal-trigger">
+                        <i class="material-icons">more_horiz</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <h3 class="card-title"> MMA </h3>
+                    <p class="light">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </article>
+
+        <!--MODAL MMA-->
+        <div class="modal" id="mma-modal">
+            <div class="modal-content">
+                <h5 class="light">Como funciona o mma ?</h5>
+                <p class="light black-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn cor-1 modal-action modal-close">Sair</a>
+            </div>
+        </div>
+
+        <!--BOTÃO QUADRO DE HORÁRIOS-->
+        <div class="row center btn-horario">
+            <a href="#horarios-modal" class="btn btn-large cor-1 modal-trigger"><i class="material-icons left">timer</i>Quadro de horários</a>
+        </div>
+
+        <!--MODAL QUADRO DE HORÁRIOS-->
+        <div class="modal" id="horarios-modal">
+            <div class="modal-content">
+                <h5 class="light">Quadro de horários</h5>
+
+                <ul class="tabs">
+                    <li class="tab col s2"><a href="#tabela-segunda">Segunda</a></li>
+                    <li class="tab col s2"><a href="#tabela-terca">Terça</a></li>
+                    <li class="tab col s2"><a href="#tabela-quarta">Quarta</a></li>
+                    <li class="tab col s2"><a href="#tabela-quinta">Quinta</a></li>
+                    <li class="tab col s2"><a href="#tabela-sexta">Sexta</a></li>
+                    <li class="tab col s2"><a href="#tabela-sabado">Sábado</a></li>
+                </ul>
+
+                <!--TABELA SEGUNDA-->
+                <table class="striped responsive-table" id="tabela-segunda">
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7:00</td>
+                            <td>12:00</td>
+                            <td>17:00</td>
+                            <td>20:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Muay Thai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu Kids</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--TABELA TERÇA-->
+                <table class="striped responsive-table" id="tabela-terca">
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Submission (No-GI)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>17:00</td>
+                            <td>20:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Muay Thai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu Kids</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00</td>
+                        </tr>
+                    </tbody>
+    
+                    <thead>
+                        <tr>
+                            <th>Time Gadi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>21:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--TABELA QUARTA-->
+                <table class="striped responsive-table" id="tabela-quarta">
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7:00</td>
+                            <td>12:00</td>
+                            <td>17:00</td>
+                            <td>20:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Muay Thai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu Kids</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--TABELA QUINTA-->
+                <table class="striped responsive-table" id="tabela-quinta">
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Submission (No-GI)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>17:00</td>
+                            <td>20:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Muay Thai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu Kids</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--TABELA SEXTA-->
+                <table class="striped responsive-table" id="tabela-sexta">
+                    <thead>
+                        <tr>
+                            <th>Jiu Jitsu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7:00</td>
+                            <td>12:00</td>
+                            <td>17:00</td>
+                            <td>20:00</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th>Muay Thai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn cor-1 modal-action modal-close">Sair</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--UNIDADES-->
+<section class="unidades bloco scrollspy" id="unidades">
+    <div class="row container">
+        <div class="col s12 center">
+            <h2 class="light titulo white-text">Unidades</h2>
+            <p class="light paragrafo white-text">Lorem ipsum dolor sit amet. Ut voluptas sint eos nihil dolores qui vitae officiis?
+            Est magnam accusantium est nihil assumenda qui itaque vitae ut illum enim est temporibus dolor eos explicabo velit.
+            Sit corporis minus eum galisum quidem et debitis saepe.</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="row container">
+            <!--MATRIZ-->
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/bh.jpg" alt="CTA GADITAS MATRIZ">
+                    </div>
+
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">CTA GADITAS MATRIZ</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i>(79) 9 9680-7210<br>
+                                <i class="material-icons left">email</i>Ericnunesc@email.com<br>
+                                <i class="material-icons left">location_on</i>R. José Pachêco, 448 - Jabutiana
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!--LUZIA-->
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/salvador.jpg" alt="CTA GADITAS LUZIA">
+                    </div>
+
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">CTA GADITAS LUZIA</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i>(79) 9 9966-9839<br>
+                                <i class="material-icons left">email</i>Ericnunesc@email.com<br>
+                                <i class="material-icons left">location_on</i>Rua: Airton Marques dos Santos,, 70 - Luzia
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!--SÃO PAULO
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/sp.jpg" alt="São Paulo">
+                    </div>
+
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">São Paulo</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i>123 321 123<br>
+                                <i class="material-icons left">email</i>sp@email.com<br>
+                                <i class="material-icons left">location_on</i>Av. São Paulo, 123
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+             RIO DE JANEIRO
+            <article class="col s12 l6">
+                <div class="card horizontal">
+                    <div class="card-image card-image-horizontal">
+                        <img src="img/rj.jpg" alt="Rio de Janeiro">
+                    </div>
+
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h3 class="card-title light">Rio de Janeiro</h3>
+                            <p class="light black-text">
+                                <i class="material-icons left">phone</i>123 321 123<br>
+                                <i class="material-icons left">email</i>rj@email.com<br>
+                                <i class="material-icons left">location_on</i>Av. Leblon, 123
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>--> 
+
+        </div>
+    </div>
+
+</section>
+
+<!--CONTATO-->
+<section class="contato bloco scrollspy" id="contato">
+    <div class="row container">
+        <div class="col s12 center">
+            <h2 class="titulo light black-text">Contato</h2>
+        </div>
+
+        <div class="col s12 m6 l4 hide-on-med-only">
+            <div class="mapa transparent">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15669.076124038078!2d-37.0814738!3d-10.9430389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd521e2570046732!2sGaditas%20Team%20-%20CTA%20-%20Matriz!5e0!3m2!1spt-BR!2sbr!4v1656703618848!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+            <div class="informacoes black-text">
+                <h4> Redes Sociais </h4>
+                <p class="light"> Fique por dentro das novidades, receba dicas, ou 
+                mostre ao mundo que você faz parte desse projeto sensacional !</p>
+                <a href="" class="btn-floating cor-1"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="btn-floating cor-1"><i class="fa fa-google"></i></a>
+                <a href="" class="btn-floating cor-1"><i class="fa fa-twitter"></i></a>
+
+                <h4> Endereço </h4>
+                <p class="light">R. José Pachêco, 448 - Jabutiana, Aracaju - SE, 49095-190</p>
+
+                <h4> Contato </h4>
+                <p class="light"> (79) 9 9680-7210 </p>
+
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+            <div class="formulario black-text">
+                <h4> Fale Conosco !</h4>
+                <p class="light"> Dúvidas, criticas ou sugestões ? Entre em contato e dê seu feedback.</p>
+
+                <form action="" method="POST">
+                    <div class="input-field">
+                        <input type="text" name="name" id="name">
+                        <label for="name">Seu nome</label>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="email" name="email" id="email">
+                        <label for="email">Seu email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="subject" id="subject">
+                        <label for="subject">Assunto</label>
+                    </div>
+
+                    <div class="input-field">
+                        <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+
+                    <button class="btn cor-1" type="submit"> Enviar </button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--DEPOIMENTOS-->
+<div class="depoimentos cor-1">
+    <div class="row container">
+        <div class="col s12 center">
+            <h2 class="titulo light white-text"> Depoimentos </h2>
+        </div>
+
+        <div class="col s12 m4 center">
+            <img src="img/depo1.jpg" class="circle responsive-img" alt="Depoimento um">
+            <p class="light white-text"> "Um excelente espaço com treinadores atenciosos e gentis".</p>
+            <h4 class="light white-text">Felipe Souza</h4>
+            <p class="yellow-text">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+            </p>
+        </div>
+
+        <div class="col s12 m4 center">
+            <img src="img/depo2.jpg" class="circle responsive-img" alt="Depoimento dois">
+            <p class="light white-text"> "Um excelente espaço com treinadores atenciosos e gentis".</p>
+            <h4 class="light white-text">Bruno Velasques</h4>
+            <p class="yellow-text">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+            </p>
+        </div>
+
+        <div class="col s12 m4 center">
+            <img src="img/depo3.jpg" class="circle responsive-img" alt="Depoimento tres">
+            <p class="light white-text"> "Um excelente espaço com treinadores atenciosos e gentis".</p>
+            <h4 class="light white-text">Joana Souza</h4>
+            <p class="yellow-text">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div class="row container center">
+            <img src="img/logo.png" class="logo_img">
+            <p class="light white-text">© CTA GADITAS ACADEMY 2022 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+<!--GOOGLE ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/9b1e88f581.js" crossorigin="anonymous"></script>
+<!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+<!-- MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- JAVASCRIPT -->
+    <script>
+        //INICIALIZAÇÃO
+        $(document).ready(function(){
+            // MENU MOBILE
+            $('.sidenav').sidenav();
+            // LINK INTERNO
+            $(".scrollspy").scrollSpy({
+                scrollOffset: 0
+            });
+            //CAROUSEL
+            $(".carousel.carousel-slider").carousel({fullWidth: true});
+            });
+            // MODAL
+            $(".modal").modal();
             // TABS
             $("ul.tabs").tabs();
-            // ESCONDER MENU AO CLICAR
-            $(".hide-menu").click(function(){
-                $(".button-collapse").sideNav("hide");
+            //AUTOPLAY
+            $('.carousel').carousel({    
             });
+            autoplay();
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4000);
+            }
+            // AMPLIAR
+            $(document).ready(function(){
+                $('.materialboxed').materialbox();
+            });
+            // ADICIONANDO NAVCOLOR
+            $(window).on("scroll",function(){
+                if($(window).scrollTop() > 100) {
+                    $(".navbar-home").addClass("nav-color");
+                }else{
+                    $(".navbar-home").removeClass("nav-color");
+                }
         });
+    </script>
 
-        // ADICIONANDO NAVCOLOR
-		$(window).on("scroll", function(){
-			if($(window).scrollTop() > 100) {
-				$(".navbar").addClass("nav-color");
-			} else {
-				$(".navbar").removeClass("nav-color");
-			}
-		});
-	</script>	
 </body>
 </html>
